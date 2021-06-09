@@ -6,6 +6,6 @@ publish = false
 
 [lib]
 name = "ticker"
-crate-type = ["cdylib"]
+crate-type = ["staticlib", "cdylib", "lib"]
 
 [dependencies]

@@ -7,7 +7,7 @@ extension = {'darwin': '.dylib', 'win32': '.dll'}.get(sys.platform, '.so')
 # add prefix lib to all but windows
 prefix = {'win32': ''}.get(sys.platform, 'lib') 
 # You can change 'debug' => 'release' if you do Cargo build --release
-lib_name = Path(Path(__file__).parent.parent, 'target', 'debug', prefix + "callback" + extension).resolve()
+lib_name = Path(Path(__file__).parent.parent, 'target', 'debug', prefix + "ticker" + extension).resolve()
 
 print(f"loading {lib_name}", flush=True)
 
